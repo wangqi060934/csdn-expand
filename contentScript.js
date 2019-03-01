@@ -10,7 +10,7 @@ expandContent()
 hideByClassName('pulllog-box')
 
 //4.左边栏
-hideByClassId('asideFooter')
+//hideByClassId('asideFooter')
 // hideByClassId('asideNewComments')//最新评论
 
 function hideByClassName(className){

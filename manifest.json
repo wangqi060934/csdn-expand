@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "description": "A chrome extension to auto expand csdn article",
+    "short_name":"CSDN auto expand",
     "author":"wangqi060934",
     "page_action": {
         "default_icon": {
@@ -21,7 +22,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://blog.csdn.net/*"       
+                "https://blog.csdn.net/*/article/details/*"       
             ],
             "js": [
                 "contentScript.js"
