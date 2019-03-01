@@ -1,0 +1,32 @@
+{
+    "name": "CSDN auto expand",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "A chrome extension to auto expand csdn article",
+    "author":"wangqi060934",
+    "page_action": {
+        "default_icon": {
+            "16": "images/csdn16.png",
+            "32": "images/csdn32.png",
+            "48": "images/csdn48.png",
+            "128": "images/csdn128.png"
+        }
+    },
+    "icons": {
+        "16": "images/csdn16.png",
+        "32": "images/csdn32.png",
+        "48": "images/csdn48.png",
+        "128": "images/csdn128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://blog.csdn.net/*"       
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
