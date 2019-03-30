@@ -28,8 +28,12 @@ function hideByClassId(idName){
 }
 
 function expandContent(){
-	let element = document.getElementById('article_content');
-	if(element){
-		element.style.height='100%'
+	let elements = document.getElementsByClassName('article_content');
+	if(!elements){
+		return
+	}
+	let count = elements.length
+	for(let i = 0; i < count; i++){
+		elements[i].style.height='100%'
 	}
 }
